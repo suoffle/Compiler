@@ -1,10 +1,12 @@
 # Compiler
 
-1. 요약
+### __1. 요약__
 - 정의된 문법 규칙({ })에 따라 액션 코드를 수행하는 코드를 추가하였다.
     - 액션 코드: 규칙이 reduce될 때 func.c의 함수를 호출하고, syntax tree를 구성한다.  
+
+<br>
     
-2. 구현 내용
+### __2. 구현 내용__
 - #1 prac.l: yylval를 YYSTYPE(long) 타입으로 확장하였다. yylval는 lex에서 값을 전달 받는 전역 변수이다.
     - 예를 들어 1111이라는 입력이 들어오면,
       - token = INTEGER_CONSTANT
