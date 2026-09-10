@@ -16,16 +16,16 @@
 ---
 
 ### __2. 구현 및 확인 내용__
-#1 명령문의 상위 명령문의 정보(return, continue, break, case) 정보 추가 
-#2 level(scope depth) 값 계산 및 저장
-#2 시멘틱 트리
+- #1 명령문의 상위 명령문의 정보(return, continue, break, case) 정보 추가   
+- #2 level(scope depth) 값 계산 및 저장  
+- #3 시멘틱 트리  
   - type과 kind, 스택 프레임(혹은 activation record)에서의 주소, level(scope depth), 주소와 offset 확인
   - 트리의 구성 요소 및 순서 확인
-#3 어셈블리 코드
+- #4 어셈블리 코드
   - label 종류와 각 스택 프레임의 주소 공간 확보 확인
   - 변수 및 함수 주소 가져오기 및 수행 여부 확인
-  - 명령어의 적확성 확인
-#4 인터프리터 결과
+  - 명령어의 적확성 확인      
+- #5 인터프리터 결과
   - symbol table 확인
   - symbol table을 이용해 수정된 symbol 값 확인  
 <br><br>
